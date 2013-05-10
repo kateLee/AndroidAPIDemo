@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent" 
+        android:layout_width="fill_parent"
+        android:id="@+id/relativeLayout">
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="100dip"
+        android:layout_height="120dip"
+        android:contentDescription="@string/desc" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:id="@+id/ItemText"
+        android:layout_marginLeft="115dip"
+        android:layout_marginRight="62dip" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/ItemButton" />
+</RelativeLayout>

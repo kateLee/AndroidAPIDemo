@@ -1,0 +1,90 @@
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:background="#D8D8D8"
+        android:cacheColorHint="#D8D8D8">
+    	<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="20dp" >
+		    <RelativeLayout
+		        android:id="@+id/ItemRelativeLayout"
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content">
+			    <com.tool.androidapidemo.imageview.FixRatioImageView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:scaleType="centerCrop"
+			        android:id="@+id/AuthorImage"
+			        android:layout_marginTop="10dip"
+			        android:layout_marginLeft="10dip" />
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/hello_world" 
+			        android:textSize="20sp"
+			        android:textStyle="bold"
+			        android:id="@+id/AuthorNameText"
+			        android:layout_toRightOf="@id/AuthorImage"
+			        android:layout_marginTop="10dip"
+			        android:layout_marginLeft="20dip"
+			        android:layout_marginRight="10dip" />
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/hello_world"
+			        android:id="@+id/CreateTimeText"
+			        android:textColor="#717171"
+			        android:textStyle="bold"
+			        android:layout_toRightOf="@id/AuthorImage"
+			        android:layout_marginLeft="20dip"
+			        android:layout_below="@id/AuthorNameText" />
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/hello_world"
+			        android:id="@+id/ItemText"
+			        android:textColor="#848484"
+			        android:layout_below="@id/AuthorImage"
+			        android:layout_marginTop="10dip"
+			        android:layout_marginLeft="10dip"
+			        android:layout_marginRight="10dip" />
+			    <com.tool.androidapidemo.imageview.AspectRatioImageView
+			        android:id="@+id/ItemImage"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dip"
+			        android:layout_below="@id/ItemText"
+			        android:adjustViewBounds="true" />
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/hello_world"
+			        android:textColor="#BDBDBD"
+			        android:textSize="16sp"
+			        android:id="@+id/ItemDesc"
+			        android:layout_below="@id/ItemImage"
+			        android:layout_marginTop="5dip"
+			        android:layout_marginLeft="10dip"
+			        android:layout_marginRight="10dip" />
+			    <Button
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dip"
+			        android:layout_marginTop="15dip"
+			        android:layout_below="@id/ItemDesc"
+			        android:id="@+id/ItemButton1"
+			        android:focusable="true"
+			        android:background="@drawable/list_like_item_bg" />
+			    <Button
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_toRightOf="@id/ItemButton1"
+			        android:layout_alignTop="@id/ItemButton1"
+			        android:layout_marginLeft="10dip"
+			        android:id="@+id/ItemButton2"
+			        android:focusable="true"
+			        android:background="@drawable/list_share_item_bg" />
+			</RelativeLayout>
+		</RelativeLayout>
+	</ScrollView>

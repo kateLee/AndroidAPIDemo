@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidAPIDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="save_restore_msg">Demonstration of saving and restoring activity state in onSaveInstanceState() and onCreate().</string>
+    <string name="saves_state">This text field saves its state:</string>
+    <string name="no_saves_state">This text field does not save its state:</string>
+    <string name="initial_text">Initial text.</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    
+    <string name="activity_change_activity">Listview Tutorial/change activity</string>
+    <string name="change_image">change image</string>
+    <string name="next_page">next page</string>
+    <string name="activity_back">back activity</string>
+    <string name="back">back</string>
+    <string name="desc">image</string>
+    <string name="activity_simple_listview">Listview Tutorial/simple listview</string>
+    <string name="contact">聯絡</string>
+    <string name="like">按讚</string>
+    <string name="share">分享</string>
+    <string name="activity_webimage_listview">Listview Tutorial/web image listview</string>
+    <string name="activity_json">Listview Tutorial/json data</string>
+    <string name="activity_progress_bar">Listview Tutorial/progress bar</string>
+    <string name="activity_nine_patch">Listview Tutorial/9 patch picture</string>
+    <string name="activity_fb_likeshare">Listview Tutorial/fb like and share</string>
+    <string name="activity_detail">Listview Tutorial/detail</string>
+
+</resources>
