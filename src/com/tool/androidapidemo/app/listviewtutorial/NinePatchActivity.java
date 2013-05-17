@@ -52,7 +52,7 @@ import static com.tool.androidapidemo.app.listviewtutorial.CommonUtilities.SERVE
 
 public class NinePatchActivity extends Activity {
 
-	private String dataUrl = SERVER_URL+DATA_URL;;
+	private String dataUrl = null;
 	private DisplayImageOptions options;
 	private ImageLoader imageLoader = ImageLoader.getInstance();// ImageLoader initial;
 	private ArrayList<UserBean> users = null;
@@ -66,6 +66,9 @@ public class NinePatchActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_simpilelistview);
+		//
+		if( SERVER_URL!=null && DATA_URL!=null )
+			dataUrl = SERVER_URL+DATA_URL;
 		//
 		DisplayMetrics displaymetrics = new DisplayMetrics();
         this.getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
@@ -111,21 +114,30 @@ public class NinePatchActivity extends Activity {
 		@Override
 		protected String doInBackground(String... arg0) {
 			// TODO Auto-generated method stub
-			HttpRequest hr;
-			try
+			String response;
+			ObjectMapper mapper = new ObjectMapper().setVisibility(JsonMethod.FIELD, Visibility.ANY);
+			if( dataUrl!=null )
 			{
-				hr = HttpRequest.get(dataUrl);
-				if( !hr.ok() )
+				HttpRequest hr;
+				try
 				{
+					hr = HttpRequest.get(dataUrl);
+					if( !hr.ok() )
+					{
+						return null;
+					}
+				} catch (Exception e){
+				// TODO Auto-generated catch block
+					e.printStackTrace();
 					return null;
 				}
-			} catch (Exception e){
-			// TODO Auto-generated catch block
-				e.printStackTrace();
-				return null;
+				response = hr.body();
 			}
-			String response = hr.body();
-			ObjectMapper mapper = new ObjectMapper().setVisibility(JsonMethod.FIELD, Visibility.ANY);
+			else
+			{
+				response = CommonUtilities.JSON_DATA;
+				//mapper.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true);
+			}
 		    mapper.configure(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false); // can reuse, share globally
 			try {
 				root = mapper.readValue(response, RootBean.class);
@@ -156,7 +168,7 @@ public class NinePatchActivity extends Activity {
 			listItemAdapter.notifyDataSetChanged();
 			if( users==null||root.meta.next==null )//if( root.meta.previous==null )
 				isfinish = true;
-			else
+			else if( SERVER_URL!=null )
 				dataUrl = SERVER_URL+root.meta.next;
 	    	super.onPostExecute(result);
 	    }
