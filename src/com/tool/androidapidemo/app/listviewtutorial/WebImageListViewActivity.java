@@ -35,19 +35,19 @@ public class WebImageListViewActivity extends Activity {
         "OS/2", "Ubuntu", "Windows7", "Max OS X", "Linux", "OS/2",
         "Android", "iPhone", "WindowsMobile" };
 	private String[] imageUrls = new String[] {
-		// 大圖片們
+		// large pictures
 		"https://lh6.googleusercontent.com/-jZgveEqb6pg/T3R4kXScycI/AAAAAAAAAE0/xQ7CvpfXDzc/s1024/sample_image_01.jpg",
 		"https://lh4.googleusercontent.com/-K2FMuOozxU0/T3R4lRAiBTI/AAAAAAAAAE8/a3Eh9JvnnzI/s1024/sample_image_02.jpg",
 		"https://lh5.googleusercontent.com/-SCS5C646rxM/T3R4l7QB6xI/AAAAAAAAAFE/xLcuVv3CUyA/s1024/sample_image_03.jpg",
 		"https://lh6.googleusercontent.com/-f0NJR6-_Thg/T3R4mNex2wI/AAAAAAAAAFI/45oug4VE8MI/s1024/sample_image_04.jpg",
 		"https://lh3.googleusercontent.com/-n-xcJmiI0pg/T3R4mkSchHI/AAAAAAAAAFU/EoiNNb7kk3A/s1024/sample_image_05.jpg",
 		"https://lh3.googleusercontent.com/-X43vAudm7f4/T3R4nGSChJI/AAAAAAAAAFk/3bna6D-2EE8/s1024/sample_image_06.jpg",
-		// 小圖片們
+		// small pictures
 		"http://tabletpcssource.com/wp-content/uploads/2011/05/android-logo.png",
 		"http://simpozia.com/pages/images/stories/windows-icon.png",
 		"https://si0.twimg.com/profile_images/1135218951/gmail_profile_icon3_normal.png",
 		"http://www.krify.net/wp-content/uploads/2011/09/Macromedia_Flash_dock_icon.png",
-		// 特殊情況們
+		//special conditions
 		"file:///sdcard/UniversalImageLoader.png", // Image from SD card
 		"assets://LivingThings.jpg", // Image from assets
 		"drawable://" + R.drawable.ic_launcher, // Image from drawables
