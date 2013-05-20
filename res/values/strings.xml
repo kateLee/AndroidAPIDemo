@@ -9,22 +9,27 @@
     <string name="no_saves_state">This text field does not save its state:</string>
     <string name="initial_text">Initial text.</string>
     <string name="error_config">Please set the %1$s constant and recompile the app.</string>
-    
+    <string name="category_linkwish_demo_code">category_linkwish_demo_code</string>
+
+
     <string name="activity_change_activity">Listview Tutorial/change activity</string>
-    <string name="change_image">change image</string>
-    <string name="next_page">next page</string>
-    <string name="activity_back">back activity</string>
-    <string name="back">back</string>
-    <string name="desc">image</string>
     <string name="activity_simple_listview">Listview Tutorial/simple listview</string>
-    <string name="contact">聯絡</string>
-    <string name="like">按讚</string>
-    <string name="share">分享</string>
     <string name="activity_webimage_listview">Listview Tutorial/web image listview</string>
     <string name="activity_json">Listview Tutorial/json data</string>
     <string name="activity_progress_bar">Listview Tutorial/progress bar</string>
     <string name="activity_nine_patch">Listview Tutorial/9 patch picture</string>
     <string name="activity_fb_likeshare">Listview Tutorial/fb like and share</string>
     <string name="activity_detail">Listview Tutorial/detail</string>
+    <string name="change_image">change image</string>
+    <string name="next_page">next page</string>
+    <string name="activity_back">back activity</string>
+    <string name="back">back</string>
+    <string name="desc">image</string>
+    <string name="contact">聯絡</string>
+    <string name="like">按讚</string>
+    <string name="share">分享</string>
+
+    <!--belong to DEMO_GSON_activity-->
+    <string name="activity_gson_demo">Parser/gson demo</string>
 
 </resources>

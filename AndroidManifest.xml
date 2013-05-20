@@ -41,59 +41,61 @@
         <activity android:name=".app.listviewtutorial.ChangeActivity" android:label="@string/activity_change_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="category_linkwish_demo_code" />
             </intent-filter>
         </activity>
         <activity android:name=".app.listviewtutorial.BackActivity" android:label="@string/activity_back"/>
         <activity android:name=".app.listviewtutorial.SimpleListViewActivity" android:label="@string/activity_simple_listview">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="category_linkwish_demo_code" />
             </intent-filter>
         </activity>
         <activity android:name=".app.listviewtutorial.WebImageListViewActivity" android:label="@string/activity_webimage_listview">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="category_linkwish_demo_code" />
             </intent-filter>
         </activity>
         <activity android:name=".app.listviewtutorial.JsonActivity" android:label="@string/activity_json">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="category_linkwish_demo_code" />
             </intent-filter>
         </activity>
         <activity android:name=".app.listviewtutorial.ProgressBarActivity" android:label="@string/activity_progress_bar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="category_linkwish_demo_code" />
             </intent-filter>
         </activity>
         <activity android:name=".app.listviewtutorial.NinePatchActivity" android:label="@string/activity_nine_patch">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="category_linkwish_demo_code" />
             </intent-filter>
         </activity>
         <activity android:name=".app.listviewtutorial.FbActivity" android:label="@string/activity_fb_likeshare">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="category_linkwish_demo_code" />
             </intent-filter>
         </activity>
         <activity android:name=".app.listviewtutorial.DetailActivity" android:label="@string/activity_detail" >
             <intent-filter>
                 <action android:name="android.intent.action.DETAIL" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="category_linkwish_demo_code" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.parser.gson.GsonDemoActivity" android:label="@string/activity_gson_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="category_linkwish_demo_code" />
             </intent-filter>
         </activity>
 
         <!-- Fragment Samples -->
         <!-- Dialog samples -->
     </application>
-
-    <instrumentation android:name=".listviewtutorial.LocalSampleInstrumentation"
-        android:targetPackage="com.tool.androidapidemo"
-        android:label="Local Sample" />
 
 </manifest>
