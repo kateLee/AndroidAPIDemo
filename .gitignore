@@ -4,8 +4,10 @@ gen
 local.properties
 proguard-project.txt
 project.properties
-
+*.class
+*.apk
 *.bak
+out/
 
 # Eclipse
 .classpath

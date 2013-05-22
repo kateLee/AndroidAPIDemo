@@ -29,7 +29,8 @@
     <string name="like">按讚</string>
     <string name="share">分享</string>
 
-    <!--belong to DEMO_GSON_activity-->
+    <!--belong to Parser-->
     <string name="activity_gson_demo">Parser/gson demo</string>
+    <string name="activity_json_demo">Parser/native json parse demo</string>
 
 </resources>

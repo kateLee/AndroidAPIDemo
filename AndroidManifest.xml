@@ -93,6 +93,12 @@
                 <category android:name="category_linkwish_demo_code" />
             </intent-filter>
         </activity>
+        <activity android:name=".app.parser.gson.JsonParseDemoActivity" android:label="@string/activity_json_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="category_linkwish_demo_code" />
+            </intent-filter>
+        </activity>
 
         <!-- Fragment Samples -->
         <!-- Dialog samples -->
