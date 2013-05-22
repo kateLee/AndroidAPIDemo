@@ -24,7 +24,7 @@ public class SimpleListViewActivity extends Activity {
 		setContentView(R.layout.activity_simpilelistview);
 		//Listview
 		ListView listview = (ListView) findViewById(R.id.listview);
-		//生成動態數組，加入數據  
+		//put data
         ArrayList<HashMap<String, Object>> listItem = new ArrayList<HashMap<String, Object>>();  
         for(int i=0;i<22;i++)  
         {
@@ -35,10 +35,10 @@ public class SimpleListViewActivity extends Activity {
             listItem.add(hm);  
         }
         SimpleAdapter listItemAdapter = new SimpleAdapter(this, listItem, R.layout.mylistview0,
-        		//動態數組與ImageItem對應的子項          
+        		//ImageItem format
                 new String[] {"ItemImage","ItemText"},
                 new int[] {R.id.ItemImage, R.id.ItemText} );
-	    //listview物件使用setAdapter方法（比對ListActivity是用setListAdapter）
+	    //listview set view
 	    listview.setAdapter(listItemAdapter);
 	}
 

@@ -394,12 +394,12 @@ public class FbActivity extends FragmentActivity implements OnChangeEffectListen
 	{
 		String effect = "";
 		if( ub.likes_count!=0 )
-			effect = ub.likes_count+"­ÓÆg";
+			effect = ub.likes_count+"likes";
 		if( ub.shares_count!=0 )
 		{
 			if( !effect.equals("") )
-				effect += "¡E";
-			effect += ub.shares_count+"¦¸¤À¨É";
+				effect += ", ";
+			effect += ub.shares_count+"shares";
 		}
 		return effect;
 	}

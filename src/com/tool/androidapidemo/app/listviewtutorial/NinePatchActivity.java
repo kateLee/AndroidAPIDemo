@@ -337,12 +337,12 @@ public class NinePatchActivity extends Activity {
 				holder.time.setText(relativeTimeString);
 				String desc = "";
 				if( users.get(position).likes_count!=0 )
-					desc = users.get(position).likes_count+"­ÓÆg";
+					desc = users.get(position).likes_count+"likes";
 				if( users.get(position).shares_count!=0 )
 				{
 					if( !desc.equals("") )
-						desc += "¡E";
-					desc += users.get(position).shares_count+"¦¸¤À¨É";
+						desc += " , ";
+					desc += users.get(position).shares_count+"shares";
 				}
 				holder.desc.setText(desc);
 			}

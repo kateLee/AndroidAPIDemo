@@ -95,10 +95,10 @@ public class FBFragment extends DialogFragment {
                 //link, message, picture, name, caption, description
 	            params.putString("privacy", jsonObject.toString());
 	            params.putString("link", ub.permalink);
-	            params.putString("name", "連結裡所以呈現的文字");
+	            params.putString("name", "K");
 	            //params.putString("message", mMessageText.getText().toString());
 	            params.putString("message", "Test");
-	            params.putString("description","在灰色註解區塊想寫些什麼？");
+	            params.putString("description","test");
 	            Request request = new Request(Session.getActiveSession(), "feed", params, 
 	                    HttpMethod.POST);
 
