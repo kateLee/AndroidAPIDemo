@@ -1,4 +1,4 @@
-package com.tool.androidapidemo.app.parser.gson;
+package com.tool.androidapidemo.app.parser.json;
 
 import android.app.Activity;
 import android.os.Bundle;
